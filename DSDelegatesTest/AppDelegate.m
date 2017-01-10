@@ -24,26 +24,37 @@
     DSPatient* patient1 = [[DSPatient alloc] init];
     patient1.name = @"Vova";
     patient1.temperature = 36.6f;
+    patient1.heartRate = 67.f;
+    patient1.bodyPressure = 120.f;
     
     
     DSPatient* patient2 = [[DSPatient alloc] init];
     patient2.name = @"Petya";
     patient2.temperature = 42.f;
+    patient2.heartRate = 83.2f;
+    patient2.bodyPressure = 110.5f;
     
     
     DSPatient* patient3 = [[DSPatient alloc] init];
     patient3.name = @"Stepa";
     patient3.temperature = 37.f;
+    patient3.heartRate = 125.f;
+    patient3.bodyPressure = 140.f;
     
     
     DSPatient* patient4 = [[DSPatient alloc] init];
     patient4.name = @"Kirya";
     patient4.temperature = 39.7f;
+    patient4.heartRate = 145.2f;
+    patient4.bodyPressure = 138.f;
     
     
     DSPatient* patient5 = [[DSPatient alloc] init];
     patient5.name = @"Igor";
     patient5.temperature = 41.1f;
+    patient5.heartRate = 151.2f;
+    patient5.bodyPressure = 142.f;
+    
     
     DSDoctor* doctor = [[DSDoctor alloc] init];
     
@@ -54,11 +65,11 @@
     patient5.delegate = doctor;
     
     
-    NSLog(@"%@ are you ok? %@", patient1.name, [patient1 howAreYou] ? @"YES" : @"NO");
-    NSLog(@"%@ are you ok? %@", patient2.name, [patient2 howAreYou] ? @"YES" : @"NO");
-    NSLog(@"%@ are you ok? %@", patient3.name, [patient3 howAreYou] ? @"YES" : @"NO");
-    NSLog(@"%@ are you ok? %@", patient4.name, [patient4 howAreYou] ? @"YES" : @"NO");
-    NSLog(@"%@ are you ok? %@", patient5.name, [patient5 howAreYou] ? @"YES" : @"NO");
+    NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient1.name, [patient1 howAreYou] ? @"YES" : @"NO", [patient1 feelsBad] ? @"YES" : @"NO");
+    NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient2.name, [patient2 howAreYou] ? @"YES" : @"NO", [patient2 feelsBad] ? @"YES" : @"NO");
+    NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient3.name, [patient3 howAreYou] ? @"YES" : @"NO", [patient3 feelsBad] ? @"YES" : @"NO");
+    NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient4.name, [patient4 howAreYou] ? @"YES" : @"NO", [patient4 feelsBad] ? @"YES" : @"NO");
+    NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient5.name, [patient5 howAreYou] ? @"YES" : @"NO", [patient5 feelsBad] ? @"YES" : @"NO");
 
     
     return YES;
