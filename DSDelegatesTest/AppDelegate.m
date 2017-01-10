@@ -24,26 +24,37 @@
     DSPatient* patient1 = [[DSPatient alloc] init];
     patient1.name = @"Vova";
     patient1.temperature = 36.6f;
+    patient1.heartRate = 85.f;
+    patient1.bodyPressure = 120.f;
     
     
     DSPatient* patient2 = [[DSPatient alloc] init];
     patient2.name = @"Petya";
     patient2.temperature = 42.f;
+    patient2.heartRate = 110.f;
+    patient2.bodyPressure = 131.f;
     
     
     DSPatient* patient3 = [[DSPatient alloc] init];
     patient3.name = @"Stepa";
     patient3.temperature = 37.f;
+    patient3.heartRate = 67.f;
+    patient3.bodyPressure = 109.f;
     
     
     DSPatient* patient4 = [[DSPatient alloc] init];
     patient4.name = @"Kirya";
     patient4.temperature = 39.7f;
+    patient4.heartRate = 130.f;
+    patient4.bodyPressure = 90.f;
     
     
     DSPatient* patient5 = [[DSPatient alloc] init];
     patient5.name = @"Igor";
     patient5.temperature = 41.1f;
+    patient5.heartRate = 147.f;
+    patient5.bodyPressure = 139.f;
+    
     
     DSDoctor* doctor = [[DSDoctor alloc] init];
     
@@ -53,12 +64,23 @@
     patient4.delegate = doctor;
     patient5.delegate = doctor;
     
-    
+    /*
     NSLog(@"%@ are you ok? %@", patient1.name, [patient1 howAreYou] ? @"YES" : @"NO");
     NSLog(@"%@ are you ok? %@", patient2.name, [patient2 howAreYou] ? @"YES" : @"NO");
     NSLog(@"%@ are you ok? %@", patient3.name, [patient3 howAreYou] ? @"YES" : @"NO");
     NSLog(@"%@ are you ok? %@", patient4.name, [patient4 howAreYou] ? @"YES" : @"NO");
     NSLog(@"%@ are you ok? %@", patient5.name, [patient5 howAreYou] ? @"YES" : @"NO");
+    */
+  
+    
+    NSArray* arrayWithPatients = [NSArray arrayWithObjects:patient1, patient2, patient3, patient4, patient5, nil];
+    
+    for (id obj in arrayWithPatients) {
+        if ([obj isKindOfClass:[DSPatient class]]) {
+            DSPatient* patient = (DSPatient*) obj;
+            NSLog(@"%@ are you ok? %@ \nDo you feel good? %@", patient.name, [patient howAreYou] ? @"YES" : @"NO", [patient feelsBad] ? @"YES" : @"NO");
+        }
+    }
 
     
     return YES;

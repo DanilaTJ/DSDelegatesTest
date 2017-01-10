@@ -25,7 +25,7 @@
 - (void) takePill;
 - (void) makeShot;
 
-
+- (BOOL) feelsBad;
 
 @end
 
@@ -40,6 +40,7 @@
 
 - (void) patientFeelsBad:(DSPatient*) patient;
 - (void) patient:(DSPatient*) patient hasQuestion:(NSString*) question;
+- (void) patientDoesntFeelsGood:(DSPatient*) patient;
 
 @optional
 

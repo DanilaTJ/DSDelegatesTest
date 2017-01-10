@@ -33,4 +33,20 @@
 }
 
 
+- (void) patientDoesntFeelsGood:(DSPatient*) patient {
+    NSLog(@"Patien %@ doesn't feels good. We need to horry up with treatment!!!", patient.name);
+    NSLog(@"Checking bodyPressure & heartRate of patient %@", patient.name);
+    
+    if (patient.heartRate >=  85 && patient.heartRate < 120) {
+        NSLog(@"patient %@ should rest", patient.name);
+    } else if (patient.heartRate >= 120) {
+        [patient takePill];
+    } else {
+        NSLog(@"patient %@ is ok", patient.name);
+    }
+}
+
+
+
+
 @end
