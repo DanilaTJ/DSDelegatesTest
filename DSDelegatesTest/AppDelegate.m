@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "DSDoctor.h"
 #import "DSPatient.h"
-
+#import "DSFriend.h"
 
 @interface AppDelegate ()
 
@@ -57,11 +57,12 @@
     
     
     DSDoctor* doctor = [[DSDoctor alloc] init];
+    DSFriend* friend = [[DSFriend alloc] init];
     
     patient1.delegate = doctor;
-    patient2.delegate = doctor;
+    patient2.delegate = friend;
     patient3.delegate = doctor;
-    patient4.delegate = doctor;
+    patient4.delegate = friend;
     patient5.delegate = doctor;
     
     /*

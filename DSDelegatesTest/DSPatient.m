@@ -34,7 +34,7 @@
     BOOL bad = arc4random() % 2;
     
     if (bad) {
-        [self.delegate patientFeelsBad:self];
+        [self.delegate patientDoesntFeelsGood:self];
     }
     
     return bad;

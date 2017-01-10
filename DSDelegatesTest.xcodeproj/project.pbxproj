@@ -17,6 +17,7 @@
 		0F9A61631E1D6DAB0078AD57 /* DSDelegatesTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A61621E1D6DAB0078AD57 /* DSDelegatesTestUITests.m */; };
 		0F9A61721E1D6DD00078AD57 /* DSPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A61711E1D6DD00078AD57 /* DSPatient.m */; };
 		0F9A61751E1D6F1D0078AD57 /* DSDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A61741E1D6F1D0078AD57 /* DSDoctor.m */; };
+		0F9D616B1E252A4D00A5F150 /* DSFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D616A1E252A4D00A5F150 /* DSFriend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		0F9A61711E1D6DD00078AD57 /* DSPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPatient.m; sourceTree = "<group>"; };
 		0F9A61731E1D6F1D0078AD57 /* DSDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDoctor.h; sourceTree = "<group>"; };
 		0F9A61741E1D6F1D0078AD57 /* DSDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDoctor.m; sourceTree = "<group>"; };
+		0F9D61691E252A4D00A5F150 /* DSFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFriend.h; sourceTree = "<group>"; };
+		0F9D616A1E252A4D00A5F150 /* DSFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFriend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		0F9A613C1E1D6DAA0078AD57 /* DSDelegatesTest */ = {
 			isa = PBXGroup;
 			children = (
+				0F9D61691E252A4D00A5F150 /* DSFriend.h */,
+				0F9D616A1E252A4D00A5F150 /* DSFriend.m */,
 				0F9A61731E1D6F1D0078AD57 /* DSDoctor.h */,
 				0F9A61741E1D6F1D0078AD57 /* DSDoctor.m */,
 				0F9A61701E1D6DD00078AD57 /* DSPatient.h */,
@@ -290,6 +295,7 @@
 				0F9A61421E1D6DAA0078AD57 /* AppDelegate.m in Sources */,
 				0F9A61721E1D6DD00078AD57 /* DSPatient.m in Sources */,
 				0F9A61751E1D6F1D0078AD57 /* DSDoctor.m in Sources */,
+				0F9D616B1E252A4D00A5F150 /* DSFriend.m in Sources */,
 				0F9A613F1E1D6DAA0078AD57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +532,7 @@
 				0F9A61691E1D6DAB0078AD57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F9A616A1E1D6DAB0078AD57 /* Build configuration list for PBXNativeTarget "DSDelegatesTestTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				0F9A616C1E1D6DAB0078AD57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F9A616D1E1D6DAB0078AD57 /* Build configuration list for PBXNativeTarget "DSDelegatesTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +550,7 @@
 				0F9A616F1E1D6DAB0078AD57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
