@@ -31,13 +31,13 @@
 
 
 - (BOOL) feelsBad {
-    BOOL feeling = arc4random() % 2;
+    BOOL bad = arc4random() % 2;
     
-    if (!feeling) {
-        [self.delegate patientDoesntFeelsGood:self];
+    if (bad) {
+        [self.delegate patientFeelsBad:self];
     }
     
-    return feeling;
+    return bad;
 }
 
 
